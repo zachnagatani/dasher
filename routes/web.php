@@ -12,7 +12,8 @@
 */
 
 Route::get('/', function () {
-    return redirect('home');
+    // return redirect('home');
+    return view('index');
 });
 
 Route::get('/app', 'AppController@index')->name('app');
