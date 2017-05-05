@@ -15,9 +15,7 @@ Route::get('/', function () {
     return redirect('home');
 });
 
-Route::get('/app', function() {
-    echo 'app';
-})->name('app');
+Route::get('/app', 'AppController@index')->name('app');
 
 Auth::routes();
 

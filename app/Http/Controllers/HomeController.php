@@ -18,14 +18,14 @@ class HomeController extends Controller
     }
 
     /**
-     * Show the application dashboard.
+     * Show the home page.
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
         if (Auth::check()) {
-            return redirect('app');
+            // return redirect('app');
         }
 
         return view('home');
