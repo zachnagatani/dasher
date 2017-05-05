@@ -12,6 +12,8 @@
 */
 
 Route::get('/', 'AppController@index')->name('app');
+Route::get('/metrics', 'AppController@index')->name('app');
+Route::get('/issues', 'AppController@index')->name('app');
 
 Auth::routes();
 

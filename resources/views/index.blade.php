@@ -21,6 +21,5 @@
     <script src="/dasher/dist/assets/vendor.js"></script>
     <script src="/dasher/dist/assets/dasher.js"></script>
 
-
   </body>
 </html>
