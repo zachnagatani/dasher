@@ -12,8 +12,12 @@
 */
 
 Route::get('/', function () {
-    return view('index');
+    return redirect('home');
 });
+
+Route::get('/app', function() {
+    echo 'app';
+})->name('app');
 
 Auth::routes();
 
