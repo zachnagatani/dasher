@@ -14,9 +14,11 @@ class AppController extends Controller
     */
     public function index() {
         if (Auth::check()) {
-            return view('index');
+            if (Auth::user()->role == 'admin') {
+                return view('index');
+            }
         }
 
-        return redirect('home');
+        return redirect('login');
     }
 }
