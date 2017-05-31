@@ -11,7 +11,7 @@
                         Please provide as detailed of a description of your issue as possible so I can help you promptly.
                     </p>
 
-                    <form method="POST" action="/issue/add">
+                    <form method="POST" action="/api/issues/add">
                         {{ csrf_field() }}
 
                         <div class="form-group">

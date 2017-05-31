@@ -18,4 +18,5 @@ Route::get('/issues', 'AppController@index')->name('app');
 Route::get('/main', 'AppController@index')->name('app');
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::post('/issue/add', 'MainController@add');
+Route::post('/api/issues/add', 'IssuesController@add');
+Route::get('/api/issues', 'IssuesController@getAll');
